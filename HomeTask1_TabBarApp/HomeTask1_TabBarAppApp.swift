@@ -12,6 +12,7 @@ struct HomeTask1_TabBarAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(PetsViewModel())
         }
     }
 }
