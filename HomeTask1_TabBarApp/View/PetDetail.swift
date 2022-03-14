@@ -19,8 +19,25 @@ struct PetDetail: View {
                 .font(.title)
             
             Text(String(petViewModel.pet.id ?? 0))
-            Text(petViewModel.pet.category?.name ?? "unknown")
+            //Text(petViewModel.pet.category?.name ?? "unknown")
+            TextView(text: petViewModel.pet.category?.name ?? "unknown")
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight:.infinity,
+                       alignment: .center) //не центрирует
+                
         }
+    }
+}
+
+struct TextView: UIViewRepresentable {
+    
+    var text: String
+    
+    func makeUIView(context: Context) -> UITextView {
+        UITextView()
+    }
+    
+    func updateUIView(_ uiView: UITextView, context: Context) {
+        uiView.text = text
     }
 }
 
