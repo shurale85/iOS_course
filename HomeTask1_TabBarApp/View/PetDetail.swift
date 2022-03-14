@@ -9,6 +9,8 @@ import SwiftUI
 import PetsNetwork
 
 struct PetDetail: View {
+    
+    //стоило ли тут заводить вьюмодель, она просто дулблирует модель
     let petViewModel: PetViewModel
     
     var body: some View {

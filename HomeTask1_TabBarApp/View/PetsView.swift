@@ -9,8 +9,17 @@ import SwiftUI
 import PetsNetwork
 
 struct PetsView: View {
+    @EnvironmentObject var petsViewModel: PetsViewModel
+    let pets:[Pet]
     var body: some View {
-        EmptyView()
+        NavigationView(){
+            
+            List(pets){ pet in
+                NavigationLink(pet.name, tag: pet.name, selection: $petsViewModel.petToPresent) {
+                    PetDetail(petViewModel: PetViewModel(pet: pet))
+                }
+            }
+        }
     }
 }
 
@@ -18,7 +27,7 @@ struct PetsView: View {
 struct PetsView_Previews: PreviewProvider {
     
     static var previews: some View {
-        PetsView()
+        PetsView(pets: Pet.getMock())
     }
 }
 #endif

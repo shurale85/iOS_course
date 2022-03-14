@@ -12,6 +12,7 @@
 		EE1C50FE27D3DCD3005B431A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE1C50FD27D3DCD3005B431A /* Assets.xcassets */; };
 		EE1C510127D3DCD3005B431A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE1C510027D3DCD3005B431A /* Preview Assets.xcassets */; };
 		EE1C511727D89A9C005B431A /* PetsNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = EE1C511627D89A9C005B431A /* PetsNetwork */; };
+		EE1CBA4B27DF1D6200BBF28B /* PetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1CBA4A27DF1D6200BBF28B /* PetsViewModel.swift */; };
 		EE9A216D27DE13AE00F673C4 /* PetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9A216C27DE13AE00F673C4 /* PetsView.swift */; };
 		EE9A216F27DE13C600F673C4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9A216E27DE13C600F673C4 /* MainView.swift */; };
 		EE9A217227DE1D4600F673C4 /* Pets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9A217127DE1D4600F673C4 /* Pets+Extension.swift */; };
@@ -29,6 +30,7 @@
 		EE1C511027D893E9005B431A /* pets.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = pets.yaml; sourceTree = "<group>"; };
 		EE1C511227D8947E005B431A /* generator.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generator.sh; sourceTree = "<group>"; };
 		EE1C511427D8953A005B431A /* PetsNetwork */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PetsNetwork; path = Modules/PetsNetwork; sourceTree = "<group>"; };
+		EE1CBA4A27DF1D6200BBF28B /* PetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsViewModel.swift; sourceTree = "<group>"; };
 		EE9A216C27DE13AE00F673C4 /* PetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsView.swift; sourceTree = "<group>"; };
 		EE9A216E27DE13C600F673C4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		EE9A217127DE1D4600F673C4 /* Pets+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pets+Extension.swift"; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				EE9A217527DE2C7E00F673C4 /* PetViewModel.swift */,
+				EE1CBA4A27DF1D6200BBF28B /* PetsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				EE1C50FC27D3DCC4005B431A /* ContentView.swift in Sources */,
 				EE9A216F27DE13C600F673C4 /* MainView.swift in Sources */,
 				EE9A217427DE2C4A00F673C4 /* PetDetail.swift in Sources */,
+				EE1CBA4B27DF1D6200BBF28B /* PetsViewModel.swift in Sources */,
 				EE1C50FA27D3DCC4005B431A /* HomeTask1_TabBarAppApp.swift in Sources */,
 				EE9A217227DE1D4600F673C4 /* Pets+Extension.swift in Sources */,
 			);

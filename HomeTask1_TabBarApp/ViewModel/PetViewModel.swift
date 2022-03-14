@@ -8,7 +8,7 @@
 import Foundation
 import PetsNetwork
 
-class PetViewModel {
+final class PetViewModel {
     
     let pet: Pet
     
